@@ -21,7 +21,7 @@ To verify an interpretation, every answer must point to a specific clause. I wou
 
 I have done this kind of work on financial documents, although not yet on regulations. Here is the closest work I have done.
 
-**FinIntelAI** is a hybrid RAG agent for financial research. I ran it against 52 benchmarks, studied the failures, and grouped them into six classes. Fixing those classes raised accuracy from 77% to 89%. None of the fixes were prompt changes or a bigger model. They were in routing, filtering, and indexing:
+**[FinIntelAI](https://github.com/31groot/finintelai)** is a hybrid RAG agent for financial research. I ran it against 52 benchmarks, studied the failures, and grouped them into six classes. Fixing those classes raised accuracy from 77% to 89%. None of the fixes were prompt changes or a bigger model. They were in routing, filtering, and indexing:
 
 - Questions asking for standalone figures were being pushed toward consolidated data, so I added routing for the statement type.
 - The word "business" was too greedy as a classification keyword and sent questions to the wrong retrieval path. Fixing it moved the narrative category from 67% to 100%.
