@@ -1,0 +1,228 @@
+{
+  "dataset": {
+    "name": "Regulatory Compliance Q&A",
+    "record_count": 11,
+    "questions": {
+      "q001": {
+        "id": "q001",
+        "question": "How often must a bank carry out periodic KYC updation for high-risk, medium-risk and low-risk customers?",
+        "type": "lookup",
+        "asker": "bank",
+        "expected_answer": "At least once every 2 years for high-risk customers, every 8 years for medium-risk customers and every 10 years for low-risk customers, counted from the date of account opening or the last KYC updation. The bank documents this in its Board-approved KYC policy.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 42(1)",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026). Earlier home of this rule: para 38 of the KYC Master Direction 2016, which has been repealed.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "What are the minimum KYC refresh intervals for banks by customer risk category?",
+          "Per RBI, how many years can a bank go between KYC updates for a low-risk account holder?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141"
+        ],
+        "verification": "primary text read",
+        "notes": "Numbers read from para 42(1) of the current text."
+      },
+      "q002": {
+        "id": "q002",
+        "question": "Before a customer's periodic KYC updation is due, how many advance intimations must a bank send, and what must be true about the mode? What applies after the due date?",
+        "type": "multi_clause",
+        "asker": "bank",
+        "expected_answer": "Before the due date: at least three advance intimations, including at least one by letter. After the due date: at least three reminders to customers who still have not complied, including at least one by letter. Letters may carry simple instructions, an escalation route for help and the consequences of not updating. Each intimation or reminder must be recorded in the bank's system per customer for audit trail. Implementation was required not later than Jan 1, 2026.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 42(7); originally inserted as para 38(e) by the Jun 12, 2025 Amendment Directions, para 4(iii)",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026). Originating amendment: RBI/2025-26/51, DOR.AML.REC.30/14.01.001/2025-26 - RBI (KYC) (Amendment) Directions, 2025, dated Jun 12, 2025.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "What notice must banks give customers about upcoming KYC updation, and what reminders after the deadline?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141",
+          "https://rbi.org.in/Scripts/BS_CircularIndexDisplay.aspx?Id=12866"
+        ],
+        "verification": "primary text read",
+        "notes": "Same rule appears in both documents; an agent should cite the current one."
+      },
+      "q003": {
+        "id": "q003",
+        "question": "A bank customer is an individual categorised as low risk. Their periodic KYC updation fell due on 15 March 2026 and has not been done. Today is 18 October 2026. Must the bank restrict the account, and by what date must it ensure the KYC is updated?",
+        "type": "version",
+        "asker": "bank",
+        "expected_answer": "No restriction is required. The bank must allow all transactions and subject the account to regular monitoring. It must ensure updation within one year of the due date or up to 30 June 2026, whichever is later. One year from 15 March 2026 is 15 March 2027, which is later than 30 June 2026, so the deadline is 15 March 2027.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 42(2); originally inserted by Jun 12, 2025 Amendment Directions, para 4(i)",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026). The 30 June 2026 date is still written in the Oct 1, 2026 version of the text, so the 'whichever is later' test must be applied, not just the date.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "For a low-risk individual whose KYC lapsed in March 2026, what is the last date to update KYC without account restrictions?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141",
+          "https://rbi.org.in/Scripts/BS_CircularIndexDisplay.aspx?Id=12866"
+        ],
+        "verification": "primary text read; date arithmetic done by me",
+        "notes": "Tests reasoning over a 'whichever is later' rule with a date that has already passed."
+      },
+      "q004": {
+        "id": "q004",
+        "question": "Which RBI document currently sets the KYC obligations for a commercial bank: the Master Direction on KYC 2016 as amended in 2025, or something else?",
+        "type": "version",
+        "asker": "bank",
+        "expected_answer": "The current governing instrument is the Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025, issued on November 28, 2025 and updated as on October 1, 2026. Chapter XI, paragraph 80, states that the existing Directions, instructions and guidelines relating to KYC as applicable to Commercial Banks stand repealed. It does not name the “Master Direction on KYC, 2016” by title in that sentence, so saying the 2016 Master Direction was repealed is accurate in substance, but should not be presented as a verbatim quote. Paragraph 81 preserves specified past actions, approvals, accrued rights and obligations, liabilities, penalties and proceedings.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, Chapter I (title and commencement) and Chapter XI, paragraph 80 (A. Repeal and saving), read with paragraph 81 (saving of prior actions and accrued matters)",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 – Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025, dated November 28, 2025, updated as on October 1, 2026. Chapter XI paragraph 80 broadly repeals the existing KYC Directions, instructions and guidelines applicable to Commercial Banks; paragraph 81 contains savings provisions.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "Is the 2016 KYC Master Direction still in force for banks?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141"
+        ],
+        "verification": "Primary RBI text read. Chapter XI is titled “Repeal and Other Provisions”; subsection A is “Repeal and saving.” Paragraph 80 uses a general repeal formulation rather than naming the 2016 Master Direction in the repeal sentence; paragraph 81 states saving provisions.",
+        "notes": "Version-trap question. Distinguish the legal effect of the broad repeal from a claim that Chapter XI expressly names the 2016 Master Direction. The 2025 Directions are the current instrument for commercial banks."
+      },
+      "q005": {
+        "id": "q005",
+        "question": "Does the RBI (Commercial Banks - Know Your Customer) Directions, 2025 apply to an NBFC? If not, what governs NBFC KYC?",
+        "type": "audience",
+        "asker": "NBFC",
+        "expected_answer": "No. These Directions apply to Commercial Banks, which are defined to exclude Small Finance Banks, Payments Banks and Local Area Banks. NBFCs are covered by a separate document issued the same day, the Reserve Bank of India (Non Banking Financial Company - Know Your Customer) Directions, 2025. Separate Directions exist for other entity types too.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 3 (applicability); entity list from secondary summary",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026) (for banks). NBFC Directions are a different instrument.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "I run an NBFC. Which KYC directions from RBI do I follow now?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141",
+          "https://www.signzy.com/blogs/RBI-KYC-Master-Directions-2025-key-changes"
+        ],
+        "verification": "applicability: primary text read; existence of the NBFC Directions: secondary source. The NBFC Directions themselves were not read, so do not answer NBFC-specific content from this entry.",
+        "notes": "Audience-dependent: same topic, different instrument."
+      },
+      "q006": {
+        "id": "q006",
+        "question": "Under the KYC rules, how can a bank use a Business Correspondent for periodic KYC updation, and who stays responsible?",
+        "type": "multi_clause",
+        "asker": "bank",
+        "expected_answer": "A bank may obtain a customer's self-declaration through an authorised BC only where there is no change in KYC information or only the address changed. The bank must enable BC systems to record these in electronic form. The declaration and any supporting documents are obtained electronically after successful biometric-based e-KYC authentication; until that option exists, a physical submission is allowed. The BC authenticates what the customer submits in person, forwards it promptly to the bank branch and gives the customer an acknowledgment. The bank then updates the records and informs the customer. The bank retains ultimate responsibility for periodic updation.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 42(3)(iv) read with para 42(5)(iii); originally para 38(a)(iia) inserted by Jun 12, 2025 Amendment Directions, para 4(ii)",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026). Originating amendment: RBI/2025-26/51, DOR.AML.REC.30/14.01.001/2025-26 - RBI (KYC) (Amendment) Directions, 2025, dated Jun 12, 2025.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "Can a customer update KYC through a bank's BC, and what are the limits?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141",
+          "https://rbi.org.in/Scripts/BS_CircularIndexDisplay.aspx?Id=12866"
+        ],
+        "verification": "primary text read",
+        "notes": "Answer needs several sub-clauses; agents often drop the 'ultimate responsibility' point."
+      },
+      "q007": {
+        "id": "q007",
+        "question": "What limits apply to accounts a bank opens through Aadhaar OTP-based e-KYC in non-face-to-face mode, and what happens if CDD is not completed?",
+        "type": "multi_clause",
+        "asker": "bank",
+        "expected_answer": "Aggregate balance across all the customer's deposit accounts must not exceed Rs 1 lakh. Aggregate credits in a financial year across all deposit accounts must not exceed Rs 2 lakh. For borrowal accounts only term loans may be sanctioned, with the aggregate not exceeding Rs 60,000 in a year. Such accounts may not operate for more than one year unless full identification is completed under para 23 or through V-CIP. If CDD is not completed within a year, deposit accounts must be closed immediately and borrowal accounts get no further debits. The customer must also give a declaration that no other OTP e-KYC account exists with any other RE.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 25(3), 25(4), 25(5), 25(6), 25(7), 25(8)",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026)",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "What are the caps on an OTP e-KYC bank account opened online?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141"
+        ],
+        "verification": "primary text read",
+        "notes": "Numeric accuracy test: three different rupee limits."
+      },
+      "q008": {
+        "id": "q008",
+        "question": "The OTP e-KYC accounts are capped at Rs 1 lakh balance. So if an existing customer does their periodic KYC updation using Aadhaar OTP e-KYC online, do those caps apply to their account?",
+        "type": "adversarial",
+        "asker": "bank",
+        "expected_answer": "No. The premise is wrong. The Directions state that the conditions in para 25 do not apply when Aadhaar OTP-based e-KYC in non-face-to-face mode is used for updation or periodic updation of KYC. Separate points apply: the mobile number used for authentication must match the one in the customer's profile, and a declared current address that differs from Aadhaar does not need positive confirmation in this case.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 42(3)(vi) and 42(3)(vii), distinguishing para 25",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026)",
+        "should_abstain": false,
+        "split": "heldout",
+        "paraphrases": [
+          "Does the Rs 1 lakh OTP e-KYC limit apply to existing customers who refresh their KYC with an Aadhaar OTP?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141"
+        ],
+        "verification": "primary text read",
+        "notes": "False-premise trap: the limits in q007 look like they apply but explicitly do not for updation."
+      },
+      "q009": {
+        "id": "q009",
+        "question": "Can a bank reject a KYC onboarding or periodic updation application without giving reasons? Which amendment introduced this requirement and where does it sit now?",
+        "type": "version",
+        "asker": "bank",
+        "expected_answer": "No. A bank must not reject an application for onboarding or periodic updation of KYC without application of mind, and the officer concerned must record the reason(s) for rejection. The Customer Acceptance Policy must also not deny banking facilities to financially or socially disadvantaged people, including Persons with Disabilities. It was introduced by the Aug 14, 2025 (2nd) Amendment Directions, which inserted words into para 11 of the 2016 Master Direction, and now sits in para 18 of the Commercial Banks KYC Directions 2025.",
+        "expected_clause": "RBI Commercial Banks KYC Directions 2025, para 18; originally the 2nd Amendment Directions of Aug 14, 2025, para 4(ii) (insertion in para 11 of the 2016 Master Direction)",
+        "version_in_force": "RBI/DOR/2025-26/169, DOR.AML.REC.No.88/14.01.002/2025-26 - Reserve Bank of India (Commercial Banks - Know Your Customer) Directions, 2025, dated Nov 28, 2025 (version updated as on Oct 1, 2026). Originating amendment: RBI/2025-26/75, DOR.AML.REC.46/14.01.001/2025-26 - RBI (KYC) (2nd Amendment) Directions, 2025, dated Aug 14, 2025.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "Do banks have to record why they turned down a KYC update request?"
+        ],
+        "sources": [
+          "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=13141",
+          "https://rbi.org.in/Scripts/BS_CircularIndexDisplay.aspx?Id=12893"
+        ],
+        "verification": "primary text read (Amendment text partly read: the para 11 insertion was visible; other items in that amendment were not reviewed)",
+        "notes": "Tests tracing a rule from an amendment to its location in the consolidated text."
+      },
+      "q010": {
+        "id": "q010",
+        "question": "A company's IPO opens for subscription on 10 October 2023. What listing timeline applies after the issue closes, and is it mandatory?",
+        "type": "version",
+        "asker": "issuer",
+        "expected_answer": "The T+3 working-day listing timeline (T = issue closing date) applies on a voluntary basis, because the issue opens between 1 September 2023 and 1 December 2023. The earlier T+6 timeline remains the default for issues in that window that do not opt in. T+3 became mandatory for public issues opening on or after 1 December 2023.",
+        "expected_clause": "SEBI Master Circular for Issue of Capital and Disclosure Requirements, dated February 9, 2026, Chapter 11 (Timeline for listing of shares in Public Issue) and Annexure XXIII; historical phase-in dates from SEBI circular SEBI/HO/CFD/TPD1/CIR/P/2023/140 dated August 9, 2023",
+        "version_in_force": "Current instrument checked: SEBI Master Circular for Issue of Capital and Disclosure Requirements, dated February 9, 2026. Chapter 11 and Annexure XXIII restate the T+3 working-day listing timeline. The August 9, 2023 circular is listed among rescinded circulars because its provisions have been consolidated; consult its applicability wording for the historical September–December 2023 phase-in.",
+        "should_abstain": false,
+        "split": "heldout",
+        "paraphrases": [
+          "What was the IPO listing deadline for issues opening in October 2023?"
+        ],
+        "sources": [
+          "https://www.sebi.gov.in/legal/master-circulars/feb-2026/master-circular-for-issue-of-capital-and-disclosure-requirements_99611.html",
+          "https://www.sebi.gov.in/sebi_data/attachdocs/feb-2026/1770636136785.pdf",
+          "https://www.sebi.gov.in/legal/circulars/aug-2023/reduction-of-timeline-for-listing-of-shares-in-public-issue-from-existing-t-6-days-to-t-3-days_75122.html",
+          "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2023/1691580430610.pdf"
+        ],
+        "verification": "Primary SEBI text read. The February 9, 2026 ICDR Master Circular Chapter 11 says listing of specified securities should occur in T+3 working days and Annexure XXIII sets out the operational timeline. The Master Circular lists the August 9, 2023 circular as rescinded/consolidated. The Sep 1, 2023 voluntary and Dec 1, 2023 mandatory cut-off dates come from the original circular’s applicability provision; those dates are not repeated in Chapter 11 itself.",
+        "notes": "For an issue opening on October 10, 2023, T+3 was voluntary. If the issuer did not opt in, the earlier T+6 timeline remained applicable. T+3 became mandatory for public issues opening on or after December 1, 2023."
+      },
+      "q011": {
+        "id": "q011",
+        "question": "A public issue of non-convertible debt securities opens on 15 December 2025. What listing timeline applies, and does the equity IPO T+3 circular govern it?",
+        "type": "audience",
+        "asker": "issuer",
+        "expected_answer": "The T+3 working-day listing timeline applies and is mandatory, since the issue opens after 1 November 2025. It comes from a separate SEBI circular dated 26 September 2024 for debt securities and Non-Convertible Redeemable Preference Shares, not the August 2023 circular on shares. That circular made T+3 voluntary for issues opening on or after 1 November 2024 and mandatory for issues opening on or after 1 November 2025. The previous timeline was T+6 working days.",
+        "expected_clause": "SEBI Master Circular for issue and listing of Non-convertible Securities, Securitised Debt Instruments, Security Receipts, Municipal Debt Securities and Commercial Paper, dated October 15, 2025, Chapter I (application process and listing timelines) and Annexure-IA; originating circular SEBI/HO/DDHS/DDHS-PoD-1/P/CIR/2024/129 dated September 26, 2024",
+        "version_in_force": "SEBI Master Circular for issue and listing of Non-convertible Securities, Securitised Debt Instruments, Security Receipts, Municipal Debt Securities and Commercial Paper, dated October 15, 2025. Chapter I expressly incorporates the T+3 working-day listing rule and states it is mandatory for public issues of debt securities and NCRPS opening on or after November 1, 2025. The August 2023 equity IPO circular does not govern debt issues.",
+        "should_abstain": false,
+        "split": "dev",
+        "paraphrases": [
+          "What is the listing timeline for a debt public issue opening in late 2025?"
+        ],
+        "sources": [
+          "https://www.sebi.gov.in/legal/master-circulars/oct-2025/master-circular-for-issue-and-listing-of-non-convertible-securities-securitised-debt-instruments-security-receipts-municipal-debt-securities-and-commercial-paper_97343.html",
+          "https://www.sebi.gov.in/sebi_data/attachdocs/oct-2025/1760532257519.pdf",
+          "https://www.sebi.gov.in/legal/circulars/sep-2024/reduction-in-the-timeline-for-listing-of-debt-securities-and-non-convertible-redeemable-preference-shares-to-t-3-working-days-from-existing-t-6-working-days-as-an-option-to-issuers-for-a-period-of-_87014.html"
+        ],
+        "verification": "Primary SEBI Master Circular text read. Chapter I and Annexure-IA state T+3; the phase-in dates are voluntary for public issues opening on or after November 1, 2024, and mandatory for issues opening on or after November 1, 2025.",
+        "notes": "Audience/instrument trap: the debt/NCRPS T+3 timeline is governed by the separate NCS master circular, not the equity IPO circular. For an issue opening on December 15, 2025, T+3 is mandatory."
+      },
+    }
+  }
+}

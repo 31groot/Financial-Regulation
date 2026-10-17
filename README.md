@@ -1,6 +1,16 @@
 # Financial-Regulation
 Measuring and Improving AI Agents for Financial Regulation
 
+**Repository contents**
+
+- `README.md`: the note (this file)
+- `eval/metrics.md`: the five checks tracked per question and how each is scored
+- `eval/question_types.md`: the question types the gold set should cover
+- `eval/gold_set_format.md`: the fields for one gold-set question
+- `examples/gold_set_v0.jsonl`: 11 starter questions from real RBI and SEBI documents, each with the expected answer, clause, version in force and source link. This is a seed set, not the full 100 to 150 question set.
+- `examples/SOURCES.md`: the documents used and how thoroughly each was checked
+
+
 ## 1. How I would measure and improve these agents
 
 Regulation questions are harder than ordinary document questions for three reasons. Rules get amended or replaced, so the version in force matters. The answer often depends on who is asking, such as a bank or an NBFC. And a wrong answer that sounds confident is worse than saying "I do not know".
