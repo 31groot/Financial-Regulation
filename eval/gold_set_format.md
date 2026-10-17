@@ -1,6 +1,6 @@
 # Gold set format
 
-One question per line in a `.jsonl` file. Fields:
+One question per line in a `.json` file. Fields:
 
 | Field | Description |
 |-------|-------------|

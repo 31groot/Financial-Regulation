@@ -7,7 +7,7 @@ Measuring and Improving AI Agents for Financial Regulation
 - `eval/metrics.md`: the five checks tracked per question and how each is scored
 - `eval/question_types.md`: the question types the gold set should cover
 - `eval/gold_set_format.md`: the fields for one gold-set question
-- `examples/gold_set_v0.jsonl`: 11 starter questions from real RBI and SEBI documents, each with the expected answer, clause, version in force and source link. This is a seed set, not the full 100 to 150 question set.
+- `examples/gold_set_v0.json`: 11 starter questions from real RBI and SEBI documents, each with the expected answer, clause, version in force and source link. This is a seed set, not the full 100 to 150 question set.
 - `examples/SOURCES.md`: the documents used and how thoroughly each was checked
 
 
