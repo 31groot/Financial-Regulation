@@ -2,7 +2,7 @@
 
 Each gold-set question is scored on five checks. Every check is recorded separately so failures can be grouped by where they started in the pipeline.
 
-| # | Check | Question it answers | How iist  scored |
+| # | Check | Question it answers | How it is scored |
 |---|-------|---------------------|------------------|
 | 1 | Correctness | Is the final answer right? | Compared with the expected answer. Human label first; LLM judge once validated. |
 | 2 | Citation support | Does the cited clause actually say what the answer claims? | LLM judge reads the clause and the claim. Judge is validated against human labels on a sample. |
